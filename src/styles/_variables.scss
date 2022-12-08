@@ -1,0 +1,21 @@
+:root {
+  --clr-gray-700: hsl(0, 0%, 20%);
+  --clr-gray-600: hsl(0, 0%, 31%);
+  --clr-gray-300: hsl(0, 0%, 74%);
+  --clr-green: hsl(144, 49%, 47%);
+  --clr-red: hsl(0, 79%, 63%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  --shadow: 0px 1px 6px 0px hsla(0, 0%, 0%, 0.102);
+
+  --backdrop-hover: hsla(0, 0%, 0%, 0.38);
+  --backdrop-modal: hsla(0, 0%, 0%, 0.251);
+
+  --ff-primary: "Noto Sans", sans-serif;
+  --ff-secondary: "Montserrat", sans-serif;
+
+  --fs-700: 24px;
+  --fs-400: 18px;
+  --fs-300: 16px;
+  --fs-200: 14px;
+}

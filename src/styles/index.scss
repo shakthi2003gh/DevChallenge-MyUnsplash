@@ -1,0 +1,14 @@
+@forward "normalize";
+@forward "variables";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans:wght@500;700;800&display=swap");
+
+html {
+  font-size: 62.5%;
+  min-width: 37.5rem;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--ff-primary);
+  color: var(--clr-gray-700);
+}
