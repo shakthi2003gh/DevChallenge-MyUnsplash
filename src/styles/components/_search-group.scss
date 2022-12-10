@@ -1,0 +1,27 @@
+.search-group {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  border: 1px solid;
+  color: var(--clr-gray-300);
+
+  &:has(input:focus) {
+    color: var(--clr-gray-600);
+  }
+
+  .material-symbols-rounded {
+    font-size: 26px;
+  }
+
+  input {
+    border: none;
+    outline: none;
+    color: var(--clr-gray-600);
+
+    &::placeholder {
+      color: var(--clr-gray-300);
+    }
+  }
+}
