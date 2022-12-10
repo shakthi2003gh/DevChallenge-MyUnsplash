@@ -1,0 +1,78 @@
+@use "../utilites/mixin" as *;
+
+.images-section {
+  --col: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--col), 1fr);
+  gap: 4rem;
+  font-family: var(--ff-secondary);
+  @include container();
+
+  .image-group-col {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 4rem;
+
+    .image {
+      position: relative;
+      height: fit-content;
+      border-radius: 1.6rem;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+
+      button,
+      .description,
+      .backdrop {
+        position: absolute;
+        display: none;
+      }
+
+      button {
+        top: 1.8rem;
+        right: 1.8rem;
+      }
+
+      .description {
+        left: 2.4rem;
+        bottom: 3.2rem;
+        font-weight: 700;
+        font-size: var(--fs-500);
+        color: var(--clr-white);
+        z-index: 565;
+      }
+
+      .backdrop {
+        inset: 0;
+        background-color: var(--backdrop-hover);
+      }
+
+      &:hover {
+        button {
+          display: inline;
+          z-index: 65;
+        }
+
+        .description,
+        .backdrop {
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 500px) {
+    --col: 2;
+  }
+
+  @media (min-width: 720px) {
+    --col: 3;
+  }
+
+  @media (min-width: 1000px) {
+    --col: 4;
+  }
+}
