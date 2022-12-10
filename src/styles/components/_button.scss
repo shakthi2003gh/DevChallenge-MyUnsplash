@@ -1,0 +1,50 @@
+.btn {
+  font-size: var(--fs-300);
+  font-weight: 700;
+  padding: 1.567rem 2.6rem;
+  border-radius: 1.2rem;
+  box-shadow: var(--shadow);
+
+  &-green {
+    color: var(--clr-white);
+    background-color: var(--clr-green);
+
+    &:hover {
+      color: var(--clr-white);
+      background-color: var(--clr-green-hover);
+    }
+
+    &:focus {
+      color: var(--clr-white);
+      background-color: var(--clr-green-hover);
+      outline: 3px solid var(--clr-green-100);
+    }
+  }
+
+  &-delete {
+    font-size: var(--fs-200);
+    padding: 0.5rem 1.5rem;
+    border-radius: 3.8rem;
+    color: var(--clr-red);
+    border-color: var(--clr-red);
+
+    &:hover,
+    &:focus {
+      color: var(--clr-white);
+      background-color: var(--clr-red);
+    }
+  }
+
+  &-link {
+    text-decoration: none;
+    color: var(--clr-gray-300);
+    box-shadow: none;
+    border: 0;
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      box-shadow: none;
+    }
+  }
+}
