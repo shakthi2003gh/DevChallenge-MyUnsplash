@@ -1,5 +1,6 @@
-@forward "normalize";
-@forward "variables";
+@forward "utilites";
+@forward "sections";
+@forward "components";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Noto+Sans:wght@500;700;800&display=swap");
 
 html {
@@ -11,4 +12,9 @@ body {
   font-size: 1.6rem;
   font-family: var(--ff-primary);
   color: var(--clr-gray-700);
+
+  &:has(.popup) {
+    overflow-y: hidden;
+    padding-right: 1.7rem;
+  }
 }

@@ -1,0 +1,26 @@
+@use "../utilites/mixin" as *;
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  @include container();
+
+  .search-group {
+    width: 100%;
+    order: 2;
+  }
+
+  .buttons {
+    margin-left: auto;
+  }
+
+  @media (min-width: 720px) {
+    gap: 1rem;
+
+    .search-group {
+      order: 0;
+      width: auto;
+    }
+  }
+}
